@@ -107,21 +107,13 @@ while running:
     elif frame_count == 120:
         cloud_size = 50
 
-    
-    if car_x > 400 and not show_message:
-        print("The car passed the house!")
-        show_message = True
 
     if car_x > 400:
         pygame.draw.polygon(screen, grey, [(280, 250), (520, 250), (400, 150)])
 
-    
-    if frame_count == 600:
-        print("600 frames passed! Something happened!")
-        frame_count = 0
 
-    
     pygame.display.flip()
+
 
 
 pygame.quit()
